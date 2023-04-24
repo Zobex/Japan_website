@@ -7,6 +7,7 @@ const NavigationItems = ({ href, text, active }) => {
     <Link legacyBehavior href={href}>
       <a className="navLink">{text}</a>
     </Link>
+    
   );
 };
 
