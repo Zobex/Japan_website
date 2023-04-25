@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import ScrollComponents from "./ScrollComponents";
+import ScrollComponent from "./ScrollComponent";
 
 const Minicomponents = ({ items, styleClass }) => {
   return (
@@ -8,7 +8,7 @@ const Minicomponents = ({ items, styleClass }) => {
       {items.map((menu, ame, idx) => {
         return (
           <div key={menu.note}>
-            <ScrollComponents {...menu} />
+            <ScrollComponent {...menu} />
           </div>
         );
       })}

@@ -379,11 +379,10 @@ flex-grow: 0;
 }
 .Add-experience_text{
   display: flex;
-  justify-content: end;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #001d3a;
+
 }
 .tagOne{
   padding: 0px;

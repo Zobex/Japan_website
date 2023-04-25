@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-const Back_drop = () => {
+const BackDrop = () => {
   return (
     <div className="box1">
       <div className="photo" id="color">
@@ -15,4 +15,4 @@ const Back_drop = () => {
   );
 };
 
-export default Back_drop;
+export default BackDrop;

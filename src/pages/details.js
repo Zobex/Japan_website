@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Minicomponents from "../../components/Minicomponents";
 import Link from "next/link";
 import Head from "next/head";
-import Btn from "../../components/Btn";
+import Btn from "../../components/Button";
 import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";

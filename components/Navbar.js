@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavigationItems from "./NavigationItems";
+import NavigationItem from "./NavigationItem";
 import SearchBar from "./SearchBar";
-import Btn from "./Btn";
+import Button from "./Button";
 import React, {useEffect, useState} from "react";
 const MENU = [
   {
@@ -21,14 +21,16 @@ const MENU = [
 const Navbar = () => {
   const [Navmenu_list , setNavbar] = useState (false);
   const changeBackground = () => {
-    //console.log(window.scrollY)
+    console.log(window.scrollY)
     if (window.scrollY >= 80){
       setNavbar(true)
     } else{
       setNavbar(false);
     }
-  }
+  }  
+  
   window.addEventListener('scroll', changeBackground)
+
   return (
     <header>
       <nav>
@@ -37,12 +39,12 @@ const Navbar = () => {
           <div className="Navmenu_list1">
             <div className="navOne">
               {MENU.map((menu, index) => 
-                    <NavigationItems key={index} {...menu} />
+                    <NavigationItem key={index} {...menu} />
             
             ) }
               <SearchBar />
             </div>
-            <Btn />
+            <Button/>
           </div>
         </div>
       </nav>
