@@ -13,7 +13,7 @@ const Btn = () => {
       <div id="popup1" class="overlay">
         <div class="popup">
           <div className="pop_box1">
-            <div>
+            <div className="Add-experience_text">
               <p className="popup_add_experience">Add an experience</p>
             </div>
             <div className="popup_add_box">

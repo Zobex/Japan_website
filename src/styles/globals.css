@@ -66,9 +66,15 @@ header{
   padding-left: 168px;
   padding-right: 158px;
   flex-direction: row;
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
     gap: 64px;
+}
+.Navmenu_list.active{
+  background-color: #000000cb;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .main_box{
 
@@ -328,6 +334,9 @@ flex-grow: 0;
    order: 0;
    flex-grow: 0;
 }
+.navbar.colorChange{
+  background-color: #000;
+}
 
 .btn2{
   width: 73px;
@@ -364,6 +373,17 @@ flex-grow: 0;
 .btn_save{
   display: flex;
   justify-content: end;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+.Add-experience_text{
+  display: flex;
+  justify-content: end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #001d3a;
 }
 .tagOne{
   padding: 0px;
@@ -645,7 +665,7 @@ h1 {
 }
 
 .popup {
-  gap:  1171px;
+  gap: 1171px;
   padding-bottom: 37px;
   overflow-y: scroll !important;
   height: 650px;
@@ -663,15 +683,19 @@ h1 {
   flex-direction: column;
   transition: all 5s ease-in-out;
 }
-.popup_add_experience{
+p.popup_add_experience{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
- color: #FFFFFF;
- margin: 0%;
- margin-bottom: 68px;
+  color: #FFFFFF;
+  margin: 0%;
+  position: -webkit-sticky;
+  padding-bottom: 68px;
+  position: sticky;
+  top: 0;
+
 
 }
 .form_box{
